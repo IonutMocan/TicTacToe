@@ -88,7 +88,7 @@ void main()
 		do {
 			PrintTable();
 		label:
-			cout << "Player " << PlayerInTurn << " choose your option: ";
+			cout << "   Player " << PlayerInTurn << " choose your option: ";
 			cin >> PlayerChoice;
 			PlayerMark = (PlayerInTurn % 2) == 1 ? 'X' : 'O';
 			if (PlayerChoice == 1 && Position[1] == '1')
@@ -120,7 +120,7 @@ void main()
 				Position[9] = PlayerMark;
 			else
 			{
-				cout << "Invalid move ";
+				cout << "   Invalid move ";
 				cin.ignore();
 				cin.get();
 				goto label;
